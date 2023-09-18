@@ -1,0 +1,39 @@
+{
+  "name": "holdmann/oauth2-superjobru",
+  "description": "SuperJob.ru OAuth 2.0 Client Provider for The PHP League OAuth2-Client",
+  "license": "MIT",
+  "authors": [{
+    "name": "Oleg Sherbakov",
+    "email": "holdmann@yandex.ru"
+  }],
+  "keywords": [
+    "oauth",
+    "oauth2",
+    "client",
+    "authorization",
+    "authentication",
+    "superjob"
+  ],
+  "config": {
+    "sort-packages": true
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "require": {
+    "league/oauth2-client": "^2.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Holdmann\\OAuth2\\Client\\Provider\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Holdmann\\OAuth2\\Client\\Provider\\Tests\\": "tests/"
+    }
+  }
+}
